@@ -3,6 +3,8 @@ package core.basesyntax;
 import java.util.Random;
 
 public class ColorSupplier {
+    private static final Random random = new Random();
+
     private enum Colors {
         WHITE,
         BLACK,
@@ -14,7 +16,7 @@ public class ColorSupplier {
     }
 
     public String getRandomColor() {
-        int choice = new Random().nextInt(Colors.values().length);
-        return Colors.values()[choice].toString().toLowerCase();
+        int choice = random.nextInt(Colors.values().length);
+        return Colors.values()[choice].name().toLowerCase();
     }
 }

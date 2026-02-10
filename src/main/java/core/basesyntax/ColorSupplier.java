@@ -19,4 +19,8 @@ public class ColorSupplier {
         int choice = random.nextInt(Colors.values().length);
         return Colors.values()[choice].name().toLowerCase();
     }
+
+    public String getDefaultColor() {
+        return Colors.WHITE.name().toLowerCase();
+    }
 }

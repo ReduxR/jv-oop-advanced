@@ -1,8 +1,7 @@
 package core.basesyntax.model;
 
-public abstract class Figure implements Drawable {
+public abstract class Figure implements Drawable, Calculable {
     private String color;
-    private String figureName;
 
     public Figure(String color) {
         this.color = color;
@@ -15,6 +14,4 @@ public abstract class Figure implements Drawable {
     public String getColor() {
         return color;
     }
-
-    public abstract double getArea();
 }

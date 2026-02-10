@@ -12,11 +12,13 @@ public class Main {
         for (int i = 0; i < figureArray.length; i++) {
             if (i < (figureArray.length) / 2) {
                 figureArray[i] = figSupplier.getRandomFigure();
-                figureArray[i].draw();
             } else {
                 figureArray[i] = figSupplier.getDefaultFigure();
-                figureArray[i].draw();
             }
+        }
+
+        for (Figure figure : figureArray) {
+            figure.draw();
         }
     }
 }

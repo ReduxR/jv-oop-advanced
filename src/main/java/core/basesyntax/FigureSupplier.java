@@ -16,7 +16,7 @@ public class FigureSupplier {
     private static final double BOUND_VALUE = 11.0;
 
     public Figure getDefaultFigure() {
-        return new Circle(supplier.getRandomColor(), DEFAULT_RADIUS);
+        return new Circle(supplier.getDefaultColor(), DEFAULT_RADIUS);
     }
 
     public Figure getRandomFigure() {
